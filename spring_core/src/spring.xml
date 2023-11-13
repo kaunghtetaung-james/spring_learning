@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <bean id="ram" class="org.kaunghtetaung.springcore.model.Ram">
+    	<property name="type" value="DDR4"></property>
+        <property name="capacity" value="8GB"></property>     
+    </bean>
+    
+    <bean id="storage" class="org.kaunghtetaung.springcore.model.Storage">
+    	<property name="type" value="SSDD"></property>
+        <property name="capacity" value="512GB"></property>      
+    </bean>
+    
+    <bean id="cpu" class="org.kaunghtetaung.springcore.model.Cpu">
+    	<property name="name" value="core i7"></property>
+        <property name="generation" value="13th"></property>      
+    </bean>
+    
+    <bean id="gpu" class="org.kaunghtetaung.springcore.model.Gpu">
+    	<property name="name" value="NVIDIA GeForce RTX 3050"></property>
+        <property name="capacity" value="4GB"></property>   
+    </bean>
+    
+    <bean id="laptop" class="org.kaunghtetaung.springcore.model.Laptop">
+        <property name="ram" ref="ram"></property>
+        <property name="storage" ref="storage"></property>
+        <property name="cpu" ref="cpu"></property>
+        <property name="gpu" ref="gpu"></property>
+    </bean>
+    
+</beans>
