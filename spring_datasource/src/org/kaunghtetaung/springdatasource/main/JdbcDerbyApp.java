@@ -1,0 +1,19 @@
+package org.kaunghtetaung.springdatasource.main;
+
+import org.kaunghtetaung.springdatasource.dao.JdbcDaoImpl;
+import org.kaunghtetaung.springdatasource.model.Circle;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class JdbcDerbyApp {
+
+	public static void main(String[] args) {
+		//Circle circle1 = new JdbcDaoImpl().getCircleById(1);
+		
+		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+		JdbcDaoImpl jdbcDaoImpl = context.getBean("jdbcDaoImpl",JdbcDaoImpl.class);
+		
+		Circle circle1 = jdbcDaoImpl.getCircleById(1);
+		System.out.println("Circle name = "+ circle1.getName());		
+	}
+}
