@@ -11,6 +11,7 @@ public class Circle {
 	public void setId(int id) {
 		this.id = id;
 	}
+	
 	public String getName() {
 		return name;
 	}
@@ -22,5 +23,10 @@ public class Circle {
 	public Circle(int id, String name) {	
 		this.id = id;
 		this.name = name;
-	}	
+	}
+	
+	@Override
+	public String toString() {
+		return "Circle [id=" + id + ", name=" + name + "]";
+	}
 }
