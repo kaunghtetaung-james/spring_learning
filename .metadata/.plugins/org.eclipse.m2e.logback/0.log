@@ -166,3 +166,13 @@
 2023-11-13 17:14:36,728 [Worker-17: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2023-11-13 17:14:36,728 [Worker-17: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\learning_workspace\spring_learning\spring_aop\src\test\resources
 2023-11-13 17:40:14,024 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-11-14 10:49:22,793 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-11-14 14:31:32,265 [Worker-45: Cleaning all projects] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact aspectj:aspectjrt:jar:1.5.4 has been relocated to org.aspectj:aspectjrt:jar:1.5.4
+2023-11-14 14:31:35,218 [Worker-51: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-11-14 14:31:35,218 [Worker-51: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\learning_workspace\spring_learning\spring_aop\src\main\resources
+2023-11-14 14:31:35,221 [Worker-51: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-11-14 14:31:35,221 [Worker-51: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\learning_workspace\spring_learning\spring_aop\src\test\resources
+2023-11-14 14:32:59,553 [Worker-51: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-11-14 14:32:59,553 [Worker-51: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\learning_workspace\spring_learning\spring_aop\src\main\resources
+2023-11-14 14:32:59,556 [Worker-51: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-11-14 14:32:59,556 [Worker-51: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\learning_workspace\spring_learning\spring_aop\src\test\resources

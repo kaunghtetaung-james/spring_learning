@@ -21,6 +21,7 @@ public class JdbcDerbyApp {
 		
 		//jdbcDaoImpl.createTriangleTable();
 		//jdbcDaoImpl.insertTriangle(new Triangle(1, "1st Triangle"));
-		System.out.println("Triangle name: " + jdbcDaoImpl.getTriangleById(1).getName());
+		jdbcDaoImpl.insertTriangle(new Triangle(2, "2nd Triangle"));
+		System.out.println("Triangle name: " + jdbcDaoImpl.getTriangleById(2).getName());
 	}
 }

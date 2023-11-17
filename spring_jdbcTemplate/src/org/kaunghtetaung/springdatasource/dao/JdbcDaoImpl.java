@@ -11,6 +11,8 @@ import org.kaunghtetaung.springdatasource.model.Triangle;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Component;
 
 //to connect to the database and operate data
@@ -20,6 +22,7 @@ public class JdbcDaoImpl {
 	//private DataSource dataSource;
 	
 	private JdbcTemplate jdbcTemplate;
+	private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 
 	//getters and setters
 	
@@ -31,6 +34,7 @@ public class JdbcDaoImpl {
 	public void setDataSource(DataSource dataSource) {
 		//this.dataSource = dataSource;
 		this.jdbcTemplate = new JdbcTemplate(dataSource);
+		this.namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(dataSource);
 	}
 			
 	public JdbcTemplate getJdbcTemplate() {
@@ -73,9 +77,13 @@ public class JdbcDaoImpl {
 		jdbcTemplate.update(sql, new Object[] {circle.getId(), circle.getName()});
 	}
 	
+	//NamedParameterJdbcTemplate test
 	public void insertTriangle(Triangle triangle) {
-		String sql = "INSERT INTO triangle (id, name) VALUES (?,?)";
-		jdbcTemplate.update(sql, new Object[] {triangle.getId(), triangle.getName()});
+		String sql = "INSERT INTO triangle (id, name) VALUES (:triangleId, :triangleName)";
+		MapSqlParameterSource namedParameters= new MapSqlParameterSource();
+		namedParameters.addValue("triangleId", triangle.getId());
+		namedParameters.addValue("triangleName", triangle.getName());
+		namedParameterJdbcTemplate.update(sql, namedParameters);
 	}
 	
 	public void createTriangleTable() {
