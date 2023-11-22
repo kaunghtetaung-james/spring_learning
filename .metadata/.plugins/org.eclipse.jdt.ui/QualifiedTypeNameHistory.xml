@@ -9,4 +9,6 @@
     <fullyQualifiedTypeName name="org.kaunghtetaung.springdatasource.dao.JdbcDaoImpl"/>
     <fullyQualifiedTypeName name="javax.sql.DataSource"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate"/>
+    <fullyQualifiedTypeName name="org.springframework.jdbc.core.namedparam.MapSqlParameterSource"/>
 </qualifiedTypeNameHistroy>

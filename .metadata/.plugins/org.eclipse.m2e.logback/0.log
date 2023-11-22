@@ -176,3 +176,4 @@
 2023-11-14 14:32:59,553 [Worker-51: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\learning_workspace\spring_learning\spring_aop\src\main\resources
 2023-11-14 14:32:59,556 [Worker-51: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2023-11-14 14:32:59,556 [Worker-51: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\learning_workspace\spring_learning\spring_aop\src\test\resources
+2023-11-17 17:27:10,333 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.

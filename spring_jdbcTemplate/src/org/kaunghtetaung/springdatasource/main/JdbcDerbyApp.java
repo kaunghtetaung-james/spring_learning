@@ -1,5 +1,6 @@
 package org.kaunghtetaung.springdatasource.main;
 
+import org.kaunghtetaung.springdatasource.dao.DaoSupportImpl;
 import org.kaunghtetaung.springdatasource.dao.JdbcDaoImpl;
 import org.kaunghtetaung.springdatasource.model.Circle;
 import org.kaunghtetaung.springdatasource.model.Triangle;
@@ -10,7 +11,8 @@ public class JdbcDerbyApp {
 
 	public static void main(String[] args) {		
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-		JdbcDaoImpl jdbcDaoImpl = context.getBean("jdbcDaoImpl",JdbcDaoImpl.class);
+		//JdbcDaoImpl jdbcDaoImpl = context.getBean("jdbcDaoImpl",JdbcDaoImpl.class);
+		DaoSupportImpl daoSupportImpl = context.getBean("daoSupportImpl", DaoSupportImpl.class);
 		
 		//System.out.println("Circle count: "+ jdbcDaoImpl.getCircleCount());
 		//System.out.println("Circle name: "+ jdbcDaoImpl.getCircleNameById(1));
@@ -21,7 +23,8 @@ public class JdbcDerbyApp {
 		
 		//jdbcDaoImpl.createTriangleTable();
 		//jdbcDaoImpl.insertTriangle(new Triangle(1, "1st Triangle"));
-		jdbcDaoImpl.insertTriangle(new Triangle(2, "2nd Triangle"));
-		System.out.println("Triangle name: " + jdbcDaoImpl.getTriangleById(2).getName());
+		//jdbcDaoImpl.insertTriangle(new Triangle(2, "2nd Triangle"));
+		
+		System.out.println("Triangle name: " + daoSupportImpl.getTriangleById(1).getName());
 	}
 }

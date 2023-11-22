@@ -22,4 +22,8 @@
 		<property name="maxActive" value="5" /> <!-- maximum active connections in the pool at any time -->
 	</bean>
 	
+	<bean id="daoSupportImpl" class="org.kaunghtetaung.springdatasource.dao.DaoSupportImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
 </beans>
